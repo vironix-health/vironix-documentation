@@ -76,7 +76,7 @@ export const baseStyles = injectGlobal`
     border-radius: 1px;
     margin: 0 auto;
     margin-top: 4px;
-    background-color: #001934;
+    background-color: #993333;
   }
   .navBarToggle .iconBar:first-child {
     margin-top: 0px;
@@ -223,12 +223,14 @@ export const baseStyles = injectGlobal`
   }
   .headerTitle {
     height: auto;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 1.5;
     font-weight: 300;
     color: #fff !important;
-    margin-top: 16px;
+    margin: auto;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
   .headerTitle a {
     color: #fff;
@@ -257,7 +259,7 @@ export const baseStyles = injectGlobal`
     padding: 0 !important;
   }
   .navBarDefault {
-    background-color: #001934;
+    background-color: #993333;
     border-radius: 0;
     border-top: 0;
     margin-bottom: 0;
@@ -271,7 +273,7 @@ export const baseStyles = injectGlobal`
     z-index: 1;
     padding: 15px;
     position: relative;
-    height: 80px;
+    height: 61px;
   }
   .navBarHeader {
     min-width: 335px;
@@ -374,7 +376,7 @@ export const baseStyles = injectGlobal`
     font-family: 'Poppins';
     font-size: 18px;
     font-weight: 600;
-    color: #001934;
+    color: #993333;
     display: flex;
     align-items: center;
   }
@@ -384,13 +386,20 @@ export const baseStyles = injectGlobal`
   }
 
   .sidebarTitle a {
-    color: #001934;
+    color: #993333;
   }
 
   .greenCircle {
     width: 8px;
     height: 8px;
     background-color: #1cd3c6;
+    border-radius: 50%;
+    margin: 0 12px;
+  }
+  .whiteCircle {
+    width: 8px;
+    height: 8px;
+    background-color: #ffff;
     border-radius: 50%;
     margin: 0 12px;
   }
@@ -450,7 +459,7 @@ export const baseStyles = injectGlobal`
   }
 
   .hideFrontLine .active > a {
-    background-color: #1ed3c6;
+    background-color: #d88c8c;
     color: #fff !important;
   }
   .firstLevel ul li .collapser svg path {
@@ -461,7 +470,7 @@ export const baseStyles = injectGlobal`
   }
 
   .firstLevel ul .item ul .item {
-    border-left: 1px solid #e6ecf1;
+    border-left: 1px solid #d88c8c;
   }
 
   .sideBarUL .item {
@@ -470,7 +479,7 @@ export const baseStyles = injectGlobal`
   }
 
   .sideBarUL .item > a {
-    color: #1ED3C6;
+    color: #d88c8c;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -508,7 +517,7 @@ export const baseStyles = injectGlobal`
     border-color: rgb(230, 236, 241) !important;
     border-style: solid none solid solid;
     border-width: 1px 0px 1px 1px;
-    background-color: #1ed3c6 !important;
+    background-color: #d88c8c !important;
     color: #fff;
   }
 
@@ -756,6 +765,8 @@ export const baseStyles = injectGlobal`
     .headerTitle {
       padding-right: 50px;
       font-size: 16px;
+      display: flex;
+      align-items: center;
     }
     .navBarBrand {
       min-height: 40px;

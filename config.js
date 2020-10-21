@@ -1,32 +1,19 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://vironix.ai',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
+    logo: '',
+    logoLink: '',
     title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
-    githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
+      "<a href='https://vironix.ai/'><img class='img-responsive' src='/static/icon.png' alt='Vironix logo' /></a>  <span>Vironix</span>",
+    githubUrl: '',
     helpUrl: '',
     tweetText: '',
-    social: `<li>
-		    <a href="https://twitter.com/hasurahq" target="_blank" rel="noopener">
-		      <div class="twitterBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/twitter-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>
-			<li>
-		    <a href="https://discordapp.com/invite/hasura" target="_blank" rel="noopener">
-		      <div class="discordBtn">
-		        <img src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/discord-brands-block.svg' alt={'Discord'}/>
-		      </div>
-		    </a>
-		  </li>`,
+    social: '',
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
@@ -38,39 +25,40 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/getting_started', // add trailing slash if enabled above
+      '/members',
+      '/organization_management',
+      '/organization_monitoring',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      // '/codeblock', // add trailing slash if enabled above
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'Vironix', link: 'https://vironix.ai' }],
     frontline: false,
     ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: '',
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
+    title: 'Vironix | Documentation',
     description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    favicon: 'src/favicon.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'Gatsby Gitbook Starter',
-      short_name: 'GitbookStarter',
+      name: 'Vironix Documentation',
+      short_name: 'VironixDocs',
       start_url: '/',
-      background_color: '#6b37bf',
-      theme_color: '#6b37bf',
+      background_color: '#993333',
+      theme_color: '#993333',
       display: 'standalone',
       crossOrigin: 'use-credentials',
       icons: [
         {
-          src: 'src/pwa-512.png',
-          sizes: `512x512`,
+          src: 'src/favicon.png',
+          sizes: `32x32`,
           type: `image/png`,
         },
       ],

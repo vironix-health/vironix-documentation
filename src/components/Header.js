@@ -96,13 +96,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
-              <Link to={finalLogoLink} className={'navBarBrand'}>
-                <img
-                  className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
-                  alt={'logo'}
-                />
-              </Link>
+              {logo && logo.image !== '' ? (
+                <Link to={finalLogoLink} className={'navBarBrand'}>
+                  <img
+                    className={'img-responsive displayInline'}
+                    src={logo.image !== '' ? logo.image : logoImg}
+                    alt={'logo'}
+                  />
+                </Link>
+              ) : null}
               <div
                 className={'headerTitle displayInline'}
                 dangerouslySetInnerHTML={{ __html: headerTitle }}
@@ -182,10 +184,10 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   </li>
                 ) : null}
                 <li>
-                  <DarkModeSwitch
+                  {/* <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
                     toggleActiveTheme={toggleActiveTheme}
-                  />
+                  /> */}
                 </li>
               </ul>
             </div>
