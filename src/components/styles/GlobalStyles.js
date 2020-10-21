@@ -227,13 +227,14 @@ export const baseStyles = injectGlobal`
     line-height: 1.5;
     font-weight: 300;
     color: #fff !important;
-    margin: auto;
     text-transform: uppercase;
     display: flex;
     align-items: center;
   }
   .headerTitle a {
     color: #fff;
+    display: flex;
+    margin-right: 10px;
   }
 
   .headerTitle a:hover {
