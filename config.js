@@ -9,7 +9,7 @@ const config = {
     logo: '',
     logoLink: '',
     title:
-      "<a href='https://vironix.ai/'><img class='img-responsive' src='https://vironix.ai/wp-content/uploads/2020/05/vironix_logo_icon.png' alt='Vironix logo' /></a>  <span>Vironix</span>",
+      "<a href='https://vironix.ai/'><img class='img-responsive headerTitleLogo' src='https://vironix.ai/wp-content/uploads/2020/05/vironix_logo_icon.png' alt='Vironix logo' /> <span class='headerTitleText'>Vironix</span></a> ",
     githubUrl: '',
     helpUrl: '',
     tweetText: '',

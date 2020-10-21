@@ -234,7 +234,15 @@ export const baseStyles = injectGlobal`
   .headerTitle a {
     color: #fff;
     display: flex;
+  }
+
+  .headerTitleLogo {
     margin-right: 10px;
+  }
+
+  .headerTitleText {
+    display: flex;
+    align-items: center;
   }
 
   .headerTitle a:hover {
@@ -276,6 +284,16 @@ export const baseStyles = injectGlobal`
     position: relative;
     height: 61px;
   }
+
+  .navBarContainer {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .navBarHeader {
     min-width: 335px;
     padding-right: 20px;
@@ -765,7 +783,6 @@ export const baseStyles = injectGlobal`
     }
     .headerTitle {
       padding-right: 50px;
-      font-size: 16px;
       display: flex;
       align-items: center;
     }
@@ -818,6 +835,10 @@ export const baseStyles = injectGlobal`
     .navBarDefault {
       display: block;
       height: auto;
+    }
+
+    .navBarContainer {
+      max-width: 720px;
     }
 
     .navBarToggle {
@@ -881,6 +902,11 @@ export const baseStyles = injectGlobal`
     .navBarDefault {
       padding: 10px;
     }
+
+    .navBarContainer {
+      max-width: 960px;
+    }
+
     .navBarBrand {
       font-size: 22px;
     }

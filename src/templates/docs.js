@@ -66,7 +66,9 @@ export default class MDXRuntimeTest extends Component {
       });
 
     // meta tags
-    const metaTitle = mdx.frontmatter.metaTitle;
+    const metaTitle = mdx.frontmatter.metaTitle
+      ? mdx.frontmatter.metaTitle
+      : mdx.fields.title + ' | CovidX';
 
     const metaDescription = mdx.frontmatter.metaDescription;
 

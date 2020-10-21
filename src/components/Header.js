@@ -95,101 +95,103 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
-            <div className={'navBarHeader'}>
-              {logo && logo.image !== '' ? (
-                <Link to={finalLogoLink} className={'navBarBrand'}>
-                  <img
-                    className={'img-responsive displayInline'}
-                    src={logo.image !== '' ? logo.image : logoImg}
-                    alt={'logo'}
-                  />
-                </Link>
+            <div className={'navBarContainer'}>
+              <div className={'navBarHeader'}>
+                {logo && logo.image !== '' ? (
+                  <Link to={finalLogoLink} className={'navBarBrand'}>
+                    <img
+                      className={'img-responsive displayInline'}
+                      src={logo.image !== '' ? logo.image : logoImg}
+                      alt={'logo'}
+                    />
+                  </Link>
+                ) : null}
+                <div
+                  className={'headerTitle displayInline'}
+                  dangerouslySetInnerHTML={{ __html: headerTitle }}
+                />
+              </div>
+              {config.header.social ? (
+                <ul
+                  className="socialWrapper visibleMobileView"
+                  dangerouslySetInnerHTML={{ __html: config.header.social }}
+                ></ul>
               ) : null}
-              <div
-                className={'headerTitle displayInline'}
-                dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
-            </div>
-            {config.header.social ? (
-              <ul
-                className="socialWrapper visibleMobileView"
-                dangerouslySetInnerHTML={{ __html: config.header.social }}
-              ></ul>
-            ) : null}
-            {isSearchEnabled ? (
-              <div className={'searchWrapper hiddenMobile navBarUL'}>
-                <LoadableComponent collapse={true} indices={searchIndices} />
-              </div>
-            ) : null}
-            <div id="navbar" className={'topnav'}>
-              <div className={'visibleMobile'}>
-                <Sidebar location={location} />
-                <hr />
-              </div>
-              <ul className={'navBarUL navBarNav navBarULRight'}>
-                {headerLinks.map((link, key) => {
-                  if (link.link !== '' && link.text !== '') {
-                    return (
-                      <li key={key}>
-                        <a
-                          className="sidebarLink"
-                          href={link.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          dangerouslySetInnerHTML={{ __html: link.text }}
-                        />
-                      </li>
-                    );
-                  }
-                })}
-                {helpUrl !== '' ? (
-                  <li>
-                    <a href={helpUrl}>
-                      <img src={help} alt={'Help icon'} />
-                    </a>
-                  </li>
-                ) : null}
+              {isSearchEnabled ? (
+                <div className={'searchWrapper hiddenMobile navBarUL'}>
+                  <LoadableComponent collapse={true} indices={searchIndices} />
+                </div>
+              ) : null}
+              <div id="navbar" className={'topnav'}>
+                <div className={'visibleMobile'}>
+                  <Sidebar location={location} />
+                  <hr />
+                </div>
+                <ul className={'navBarUL navBarNav navBarULRight'}>
+                  {headerLinks.map((link, key) => {
+                    if (link.link !== '' && link.text !== '') {
+                      return (
+                        <li key={key}>
+                          <a
+                            className="sidebarLink"
+                            href={link.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            dangerouslySetInnerHTML={{ __html: link.text }}
+                          />
+                        </li>
+                      );
+                    }
+                  })}
+                  {helpUrl !== '' ? (
+                    <li>
+                      <a href={helpUrl}>
+                        <img src={help} alt={'Help icon'} />
+                      </a>
+                    </li>
+                  ) : null}
 
-                {tweetText !== '' ? (
+                  {tweetText !== '' ? (
+                    <li>
+                      <a
+                        href={'https://twitter.com/intent/tweet?&text=' + tweetText}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
+                      </a>
+                    </li>
+                  ) : null}
+                  {tweetText !== '' || githubUrl !== '' ? (
+                    <li className="divider hiddenMobile"></li>
+                  ) : null}
+                  {config.header.social ? (
+                    <li className={'hiddenMobile'}>
+                      <ul
+                        className="socialWrapper"
+                        dangerouslySetInnerHTML={{ __html: config.header.social }}
+                      ></ul>
+                    </li>
+                  ) : null}
+                  {githubUrl !== '' ? (
+                    <li className={'githubBtn'}>
+                      <GitHubButton
+                        href={githubUrl}
+                        data-show-count="true"
+                        aria-label="Star on GitHub"
+                      >
+                        Star
+                      </GitHubButton>
+                    </li>
+                  ) : null}
                   <li>
-                    <a
-                      href={'https://twitter.com/intent/tweet?&text=' + tweetText}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
-                    </a>
-                  </li>
-                ) : null}
-                {tweetText !== '' || githubUrl !== '' ? (
-                  <li className="divider hiddenMobile"></li>
-                ) : null}
-                {config.header.social ? (
-                  <li className={'hiddenMobile'}>
-                    <ul
-                      className="socialWrapper"
-                      dangerouslySetInnerHTML={{ __html: config.header.social }}
-                    ></ul>
-                  </li>
-                ) : null}
-                {githubUrl !== '' ? (
-                  <li className={'githubBtn'}>
-                    <GitHubButton
-                      href={githubUrl}
-                      data-show-count="true"
-                      aria-label="Star on GitHub"
-                    >
-                      Star
-                    </GitHubButton>
-                  </li>
-                ) : null}
-                <li>
-                  {/* <DarkModeSwitch
+                    {/* <DarkModeSwitch
                     isDarkThemeActive={isDarkThemeActive}
                     toggleActiveTheme={toggleActiveTheme}
                   /> */}
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
           <StyledBgDiv isDarkThemeActive={isDarkThemeActive}>

@@ -22,6 +22,7 @@
     "gatsby": "^2.18.10",
     "gatsby-link": "^2.2.27",
     "gatsby-plugin-algolia": "^0.5.0",
+    "gatsby-plugin-catch-links": "^2.3.15",
     "gatsby-plugin-emotion": "^4.1.18",
     "gatsby-plugin-gtag": "^1.0.12",
     "gatsby-plugin-layout": "^1.1.18",
