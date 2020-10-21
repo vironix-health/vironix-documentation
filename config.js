@@ -43,7 +43,7 @@ const config = {
     description: 'Documentation built with mdx.',
     ogImage: null,
     docsLocation: 'https://github.com/vironix-health/vironix-documentation/tree/main/content',
-    favicon: 'src/favicon.ico',
+    favicon: 'src/favicon.png',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
@@ -55,13 +55,7 @@ const config = {
       theme_color: '#993333',
       display: 'standalone',
       crossOrigin: 'use-credentials',
-      icons: [
-        {
-          src: 'src/favicon.png',
-          sizes: `32x32`,
-          type: `image/png`,
-        },
-      ],
+      icon: 'src/favicon.png',
     },
   },
 };
