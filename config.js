@@ -43,7 +43,7 @@ const config = {
     description: 'Documentation built with mdx.',
     ogImage: null,
     docsLocation: 'https://github.com/vironix-health/vironix-documentation/tree/main/content',
-    favicon: 'src/favicon.png',
+    favicon: 'src/favicon.ico',
   },
   pwa: {
     enabled: false, // disabling this will also remove the existing service worker.
