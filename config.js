@@ -40,9 +40,9 @@ const config = {
   },
   siteMetadata: {
     title: 'Vironix | Documentation',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    description: 'Documentation built with mdx.',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
+    docsLocation: 'https://github.com/vironix-health/vironix-documentation/tree/main/content',
     favicon: 'src/favicon.png',
   },
   pwa: {
