@@ -31,13 +31,6 @@ const plugins = [
             sizeByPixelDensity: true,
           },
         },
-        {
-          resolve: 'gatsby-remark-copy-linked-files',
-          options: {
-            destinationDir: 'images',
-            ignoreFileExtensions: [],
-          },
-        },
       ],
       extensions: ['.mdx', '.md'],
     },

@@ -343,12 +343,22 @@ export const baseStyles = injectGlobal`
   }
   
   blockquote {
-    color: rgb(116, 129, 141);
-    margin: 0px 0px 24px;
-    padding: 0px 0px 0px 12px;
-    border-left: 4px solid rgb(230, 236, 241);
-    border-color: rgb(230, 236, 241);
+    font-size: 14.5px;
+    padding: 15px;
+    margin-bottom: 0px;
+    border-left: 4px solid rgba(153, 51, 51, 0.5);
+    border-color: rgba(153, 51, 51, 0.5);
+    background-color: rgba(153, 51, 51, 0.2);
+
+    .paragraph {
+      margin-bottom: 0px;
+    }
   }
+
+  blockquote p:first-child{
+    margin-top: 0px;
+  }
+
   .socialWrapper {
     display: flex;
     align-items: center;
