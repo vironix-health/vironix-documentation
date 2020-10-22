@@ -5,7 +5,7 @@ metaDescription: 'This is the meta description'
 
 # Overview
 
-The core of Vironix is accessing
+The core of Vironix is assessing
 
 # How to begin an assessment?
 
