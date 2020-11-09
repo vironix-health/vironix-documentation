@@ -4,19 +4,29 @@ metaTitle: 'Getting Started | CovidX'
 metaDescription: 'This is the meta description'
 ---
 
-CovidX is composed of a member portal for daily check-ins and an organization portal for monitoring and reporting.
+CovidX allows you to easily to self-monitor your symptoms and signs, catch infections early, and take control of your overall health.
 
-# Member Guide
+## Signing Up
 
-As a new member your enrollment will follow the following steps:
+You can sign-up to your organization through two methods:
 
-1. Receive an email invite or sign-up link
-2. Create your CovidX account
-3. Setup your health profile
-4.
+- Email invite
+- Open sign-up link
 
-Learn more about your member dashboard.
+Please consult your organization's admins on how to sign-up.
 
-# Admin Guide
+## Setting up your health profile
 
-Heading 2 text
+After creating your account, you will need to setup your health profile:
+
+![Onboarding](./images/onboarding.png)
+
+## Taking your first assessment
+
+![First Assessment](./images/first_assessment.png)
+
+## Receiving your assessment results
+
+Once you complete the questionnaire, we'll leverage our machine-learning algorithms to provide you with personalized health recommendations:
+
+![Results](./images/assessment_results.png)

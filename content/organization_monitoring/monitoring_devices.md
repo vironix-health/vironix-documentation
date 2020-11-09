@@ -1,15 +1,14 @@
 ---
 title: 'Monitoring devices'
-metaTitle: 'This is the title tag of this page'
 metaDescription: 'This is the meta description'
 ---
 
-# Overview
+## Overview
 
 We suggest that you buy or reimburse your employees for the devices in the links below (it will be a nice, inexpensive benefit and incentive for them to use the monitoring software and protect their health).
 This is not mandatory, but the software works best at detecting health problems if users enter their oxygen saturation, heart rate, and temperature everyday which will be shown on their devices (the daily assessments take seconds and are easy to work with).
 
-# Recommended Devices
+## Recommended Devices
 
 Here are some recommended devices that we have worked with. We are not affiliated with any of these products. Note that these devices are HSA and FSA eligible.
 

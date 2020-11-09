@@ -31,7 +31,8 @@ const config = {
       '/organization_monitoring',
     ],
     collapsedNav: [
-      // '/codeblock', // add trailing slash if enabled above
+      '/organization_monitoring', // add trailing slash if enabled above
+      '/legal', // add trailing slash if enabled above
     ],
     links: [{ text: 'Vironix', link: 'https://vironix.ai' }],
     frontline: false,
